@@ -4,8 +4,8 @@
 #include <MD_MAX72xx.h>
 #include <WiFi.h>
 
-#include "youtube_stats.h"
-#include "wifi_credentials.h"
+#include "src/youtube_stats.h"
+#include "src/wifi_credentials.h"
 
 
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
@@ -45,7 +45,7 @@ void ensureWiFiConnection(){
 
 void setup() {
   ledMatrix.begin();         // initialize the object
-  ledMatrix.setIntensity(7); // set the brightness of the LED matrix display (from 0 to 15)
+  ledMatrix.setIntensity(0); // set the brightness of the LED matrix display (from 0 to 15)
   ledMatrix.displayClear();  // clear led matrix display
   ledMatrix.setTextAlignment(PA_RIGHT);
 }
