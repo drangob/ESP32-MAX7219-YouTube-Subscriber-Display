@@ -1,0 +1,2 @@
+#define GOOGLE_API_KEY "CHANGE_ME"
+#define YT_CHANNEL_ID "CHANGE_ME"
