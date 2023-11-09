@@ -57,5 +57,9 @@ void loop() {
   if (ytStats.fetch()) {
     ledMatrix.print(ytStats.getSubscriberCount());
     delay(THIRTY_SECONDS);
+  } else {
+    ledMatrix.displayScroll(ytStats.getError().c_str(), PA_CENTER, PA_SCROLL_LEFT, 100);
+    while(ledMatrix.displayAnimate()); // loop to complete animation
+    ledMatrix.displayReset();
   }
 }
