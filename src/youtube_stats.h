@@ -12,6 +12,9 @@ private:
   uint subscriberCount;
   uint viewCount;
   uint videoCount;
+  uint estSubscriberCount;
+  bool fetchSocialCounts();
+  bool fetchYouTube();
 
 public:
   bool fetch();
@@ -19,6 +22,7 @@ public:
   uint getSubscriberCount();
   uint getViewCount();
   uint getVideoCount();
+  uint getEstSubscriberCount();
 };
 
 #endif
